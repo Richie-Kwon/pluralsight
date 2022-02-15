@@ -1,12 +1,17 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Configuration;
 
 namespace pluralsight.Pages.Restaurant
 {
-    public class List : PageModel
+    public class ListModel : PageModel
     {
 
         // public int MyProperty { get; set; }
         public string Message { get; set; }
+
+        public ListModel(IConfiguration config)
+        {
+        }
 
         public void OnGet()
         {
