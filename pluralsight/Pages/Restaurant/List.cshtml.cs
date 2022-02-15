@@ -5,6 +5,7 @@ namespace pluralsight.Pages.Restaurant
 {
     public class ListModel : PageModel
     {
+        private readonly IConfiguration config;
 
         // public int MyProperty { get; set; }
         public string Message { get; set; }
