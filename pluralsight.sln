@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pluralsight", "pluralsight\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ofood", "Ofood\Ofood.csproj", "{DE65DF31-F925-4998-BDCB-70791450249E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfoodData", "OfoodData\OfoodData.csproj", "{32AB9325-FA48-4CF3-9AC4-49AEA666B850}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{DE65DF31-F925-4998-BDCB-70791450249E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE65DF31-F925-4998-BDCB-70791450249E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE65DF31-F925-4998-BDCB-70791450249E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32AB9325-FA48-4CF3-9AC4-49AEA666B850}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32AB9325-FA48-4CF3-9AC4-49AEA666B850}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32AB9325-FA48-4CF3-9AC4-49AEA666B850}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32AB9325-FA48-4CF3-9AC4-49AEA666B850}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

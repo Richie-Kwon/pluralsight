@@ -1,4 +1,8 @@
 using System.Collections.Generic;
+using System.Data.Common;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Security.Cryptography;
 using Ofood;
 
 namespace OfoodData
@@ -10,9 +14,27 @@ namespace OfoodData
 
     public class InMemoryRestaurantData : IRestaurantData
     {
+        readonly List<Restaurant> restaurants;
+
+        public InMemoryRestaurantData()
+        {
+            restaurants = new List<Restaurant>()
+            {
+               new Restaurant{Id = 1, Name = "Ronnie's Scott", Location = "Maryland",  Cuisine = CuisineType.Indian},
+               new Restaurant{Id = 2, Name = "Jen's kitchen", Location = "ColliersWoood",  Cuisine = CuisineType.Indian},
+               new Restaurant{Id = 3, Name = "Bountiful cow", Location = "Red lion",  Cuisine = CuisineType.Indian}
+               
+            };
+
+        }
+
         public IEnumerable<Restaurant> GetAll()
         {
-            throw new System.NotImplementedException();
+            return from r in restaurants
+                orderby r.Name
+                select r; 
+
+
+        }
         }
     }
-}     
