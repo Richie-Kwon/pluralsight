@@ -8,4 +8,8 @@
       <ProjectReference Include="..\OfoodData\OfoodData.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="NugetPackageUpdates" Version="1.0.28" />
+    </ItemGroup>
+
 </Project>
